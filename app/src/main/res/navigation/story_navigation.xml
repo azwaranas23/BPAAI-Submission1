@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/story_navigation"
+    app:startDestination="@id/listStoryFragment">
+    <fragment
+        android:id="@+id/listStoryFragment"
+        android:name="com.dicoding.picodiploma.storyapp.ui.liststory.ListStoryFragment"
+        android:label="fragment_list_story"
+        tools:layout="@layout/fragment_list_story" >
+        <action
+            android:id="@+id/action_listStoryFragment_to_detailStoryFragment"
+            app:destination="@id/detailStoryFragment" />
+        <action
+            android:id="@+id/action_listStoryFragment_to_addStoryActivity"
+            app:destination="@id/addStoryActivity" />
+        <action
+            android:id="@+id/action_listStoryFragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailStoryFragment"
+        android:name="com.dicoding.picodiploma.storyapp.ui.detailstory.DetailStoryFragment"
+        android:label="fragment_detail_story"
+        tools:layout="@layout/fragment_detail_story" >
+        <argument
+            android:name="story"
+            app:argType="com.dicoding.picodiploma.storyapp.network.StoryItem" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.dicoding.picodiploma.storyapp.ui.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/addStoryActivity"
+        android:name="com.dicoding.picodiploma.storyapp.ui.addstory.AddStoryActivity"
+        android:label="activity_add_story"
+        tools:layout="@layout/activity_add_story" />
+</navigation>

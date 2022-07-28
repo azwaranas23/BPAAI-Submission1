@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">StoryApp</string>
+    <string name="empty_text">NO DATA</string>
+    <string name="login">Log In</string>
+    <string name="signup">Sign Up.</string>
+    <string name="email">Email</string>
+    <string name="invalid_email">Invalid email.</string>
+    <string name="password">Password</string>
+    <string name="invalid_password">it must have at least 6 characters.</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
+    <string name="have_an_account">Have an account?</string>
+    <string name="name">Name</string>
+    <string name="invalid_name">Invalid name.</string>
+    <string name="load">load</string>
+    <string name="tv_placeholder" translatable="false">TextView</string>
+    <string name="retry">Retry</string>
+    <string name="value" translatable="false">30</string>
+    <string name="story_per_page">Story per page:</string>
+    <string name="cant_be_empty">Can\'t be empty</string>
+    <string name="no_data_to_display">No data to display</string>
+    <string name="new_story">New Story</string>
+    <string name="story_created_successfully">Story created successfully</string>
+    <string name="description_detail">Fill the description</string>
+    <string name="error_no_image">Please enter the image file first.</string>
+    <string name="choose_a_picture">Choose a Picture</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="upload">Upload</string>
+    <string name="dtl_description">detail description</string>
+    <string name="description">Description:</string>
+    <string name="owner_story">%1$s\'s story</string>
+    <string name="update_story">Update Story</string>
+    <string name="touched_view">Touched view %1$d</string>
+    <string name="add_story">Add Story</string>
+    <string name="change_language">Change Language</string>
+    <string name="logout">Logout</string>
+    <string name="settings">Settings</string>
+    <string name="dark_mode">dark mode</string>
+    <string name="set_theme">Set Theme</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

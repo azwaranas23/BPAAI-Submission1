@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/addStoryFragment">
+
+    <fragment
+        android:id="@+id/addStoryFragment"
+        android:name="com.dicoding.picodiploma.storyapp.ui.addstory.AddStoryFragment"
+        android:label="fragment_add_story"
+        tools:layout="@layout/fragment_add_story">
+        <action
+            android:id="@+id/action_addStoryFragment_to_storyActivity"
+            app:destination="@id/storyActivity">
+            <argument
+                android:name="toastText"
+                android:defaultValue="@null" />
+        </action>
+    </fragment>
+    <activity
+        android:id="@+id/storyActivity"
+        android:name="com.dicoding.picodiploma.storyapp.ui.liststory.ListStoryActivity"
+        android:label="activity_story"
+        tools:layout="@layout/activity_list_story">
+        <argument
+            android:name="toastText"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+    </activity>
+</navigation>

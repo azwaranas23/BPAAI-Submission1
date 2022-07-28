@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.dicoding.picodiploma.storyapp.ui.register.SignupFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup">
+        <action
+            android:id="@+id/action_signupFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.dicoding.picodiploma.storyapp.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_listStoryActivity"
+            app:destination="@id/listStoryActivity"
+            app:popUpTo="@id/listStoryActivity"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+        <argument
+            android:name="email"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="password"
+            android:defaultValue='@null'
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <activity
+        android:id="@+id/listStoryActivity"
+        android:name="com.dicoding.picodiploma.storyapp.ui.liststory.ListStoryActivity"
+        android:label="activity_list_story"
+        tools:layout="@layout/activity_list_story" />
+</navigation>
